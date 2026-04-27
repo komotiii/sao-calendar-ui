@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RW:OverView</title>
+  <link rel="icon" sizes="64x64" href="icons/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="timer-background"></div>
+  <div id="app">
+    <div id="left-column">
+      <div id="main-content" style="display: none;">
+        <div id="current-time">00:00</div>
+        <div id="time-range">00:00-00:00</div>
+        <div id="current-event" class="current-event">No Current Event</div>
+        <div id="timer">
+          <span id="time">NaN:NaN:NaN</span>
+        </div>
+        <div id="info">
+          Fluctlight Acceleration rate safety limiter disengaged.<br>
+          Time until maximum-acceleration phase.<br>
+          For any personnel in the STLs, please initiate disengagement<br>
+          protocol immediately.
+        </div>
+        <div id="status">Loading...</div>
+        <div id="legend"></div>
+      </div>
+    </div>
+
+    <div id="right-column">
+      <div id="events-panel">
+        <div id="events-header">
+          <div id="events-title">Today</div>
+          <div id="events-meta">
+            <span id="events-remaining"></span>
+            <span id="events-next"></span>
+          </div>
+        </div>
+        <div id="events-filters">
+          <label><input type="checkbox" id="filter-current" checked> Current</label>
+          <label><input type="checkbox" id="filter-upcoming" checked> Upcoming</label>
+          <label><input type="checkbox" id="filter-past" checked> Past</label>
+        </div>
+        <div id="events-container">
+          <div id="events-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
