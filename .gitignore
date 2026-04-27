@@ -1,12 +1,12 @@
 # secrets
-cred.json
 .secrets/
 
 # logs
-log.txt
 *.log
 
-# python
-__pycache__/
-*.pyc
-.mypy_cache/
+# local scripts
+*.bat
+
+# local audio assets (not tracked)
+src/s.mp3
+src/s1.mp3
